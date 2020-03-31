@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Exnora Green Pammal</title>
+    <link href="css/style.css"  rel="stylesheet" />
+	<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="css/pascal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script><script type="text/javascript">
+var timeout         = 0;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+	$('#color').css('background','#5a5858');
+	
+	}
+
+function jsddm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+	$('#color').css('background','none');
+}
+
+function jsddm_timer()
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);}
+	
+);
+
+document.onclick = jsddm_close;
+</script>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			
+			
+		});
+	</script>
+
+
+</head>
+
+<body>
+<div class="site">
+<div class="top">
+	<li><a href="index.html"><img src="images/logo.png" width="371" height="68" /></a></li>
+	<li style="float:right;"><a href="sitemap.html"><img src="images/site.png" width="103" height="44" /></a></li>
+</div>
+<div class="button_align">
+	<ul id="jsddm">
+    	<li><a href="index.html">Home</a></li>
+		<li><a href="about_us.html"> About us</a>
+        <ul>
+        	<li><a href="overview.html">Over view</a></li>
+            <li><a href="mission_goal.html">Mission and Goal</a></li>
+            <li><a href="management.html">Management</a></li>
+            <li><a href="partners.html">Our Partners</a></li>
+            
+        </ul>
+        </li>
+            <li><a href="programme.html">Programme</a>
+            <ul>
+            	<li><a href="swm-in-india.html">SWM in india</a></li>
+                <li><a href="trunkey_project .html">Turnkey Project</a></li>
+                <li><a href="consultancy.html">Consultancy</a></li>
+            </ul>
+            </li>
+        <li><a href="services.html">Services</a>
+        	<ul>
+            	<li><a href="where-we-work.html">Where we work</a></li>
+            	<li><a href="partnersip_goverment.html">Partnership with Goverment</a></li>
+                <li><a href="partnersip_corporate.html">Partnership with Corporate</a></li>
+                <li><a href="partnersip_Public.html">Partnership with Public</a></li>
+                <li><a href="partnersip_association.html">Partnership with Other Association</a></li>
+            </ul>
+        </li>
+       <li><a href="get-involved.html">Get involved</a>
+            <ul>
+            	<li><a href="careers.html">Careers</a></li>
+            	<li><a href="internship.html">Internship</a></li>
+                <li><a href="visit-egp.html">Visit EGP</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+            </ul>
+        </li>
+     	<li><a href="inspiring_progress.html">Inspiring Progress</a>
+        <ul>
+    		<li><a href="reports.html">Reports</a></li>
+            <li><a href="new_letter.html">New letter</a></li>
+            <li><a href="recognition.html">Recognition</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="galary.html">Gallery</a></li>
+        </ul>
+        <li><a href="product.html">product</a></li>		<li><a href="test-photo.html">Gallery</li>
+        <li style="border-right:none;"><a href="contact_us.html">Contact us</a></li>
+    </ul></div>		<div class="banner">        	<div class="slider-wrapper theme-default">                <div id="slider" class="nivoSlider">                <img src="images/banner.jpg" width="805" height="215" alt=""/>                <img src="images/where_we_work_10re.jpg" alt="" />                <img src="images/banner2.jpg" width="805" height="215" alt=""/>                <img src="images/banner3.jpg" width="805" height="215" alt=""/>                <img src="images/banner4.jpg" width="805" height="215" alt=""/>                </div>            </div>    		</div>        <div class="con_content">	<div class="icon"><img src="images/icon-all.png" /></div>	<div class="img2">photos</div>    <div class="contant_lft">    <div class="photos">    	<div class="photos-scl"><div class="photos-head">Green Temple - Campaign Event Held on 24 FEB 2017</div><p><a href='#' onclick="window.open('https://photos.google.com/share/AF1QipO8maQEAXqNFdFf1UtaToz44jg63d4YPT4zzJ6BXrZW8JKHScaRTNxsczXfjzU1ZQ?key=Q0N3MGcxWlR5RmEtTXBxUk9xbzZsRE4xaVpmZHpR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/_kBKh1wPviXmKlpD64fQMe9QS-mAhDs2d21icSaxIfyv2NYg1diqUW8jbdWJNboQdrPRuCQtjTnGycwIKXkb75B5SovlC23bzLQ7l1-yP9Pm-8hVVnXqfdCBRm3AZFoy6W4mhQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOX33m31NZpeNOjVJiLHT958RV4UlBaJmLYwMeDYhNy7LWps6tTEGO3TFyUmE5Qzg?key=SFItUW9FM09EWnVRRm5mMi1TWHFoSl9xNF9zdVh3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/auXIHhDwn5Ib8DQRoafIzzYX1r6MV1dueikgv6FbB5Ac6Ybv4KBWtZDEvM7Ubs-9z5nZxMv5zxzDhL_g6rcx802yBOmhv0zzjKGIuQVV_GGtZySpDCncV9fc6C2BBhLNL2vUHA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipM8V2KoB-cu0EWOk2RQ4JvEU7RO9s6Ih0bjEBWkPD_baZCMCMZAsmFlCCt4_UwPCQ?key=bERGMFVIcXZDUkxXal9ybmNRcWdFUU5pamxFdlhB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/8CBSO5iOZvxBXfrF8k7jrJinQDx6Lb6NqBqFAjRyJqVRa5_TkxAWq74s22E_ACNt7iLq8wHByp0N0qob4S9Vqc-HVUxmWGcFJEAGWCW2NuoBsQSNCuo0bIY8zPDPUcNJMRaPQQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNKi7cO7kmVBXR6xGdwSBbQ6xL5CFiWVggvdV7m3rATEZ2zE_VOgZGDtkF6p-NknA?key=bjE4cHdrV3lNRmVxeTNxdHpvbHBFQ3pSQXU3M1pn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/8uLCCaNwpB4JadryvFeTLA7KSmhxQkeaqiLB88YLlBkeJYdrR1SB7xjNa3Ezn9nSCvs8PSuxosxarSwwKYNvsoPSLFHwwO8A9UN1Xbe2-Wop8-77NvSgmgSKXTmQiVbMIsMphg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNuyT215voB4g-8y5lXRYi9wtja8ODgKlTXHeSgFT4Cm6HOhwoWCO0AVQrhkHhTAw?key=S2MtZ2FxWEQwcEI4a3dsRjJjWnJ1YVY4U1Y5Nzd3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/iM2soBdNZqSMmUts0v0AIOKwMgBM16jUh15fYqIrcSYPtm_0t9I-qfZgCISgE9jNqwDjD6Aj9c8bo4Kc2U32XadDA1CKjYJR2Kzy8_G-h2kO13NIyVC3I0erXctjBX9WIrxKmw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipM7izgS1uxd6mloe3xWcCLpq5uZQgfAk-Tg5EFjxB5hNM5ktKyiz-zM9DQt5g8mbQ?key=ZFFlbFRwQzdSb0FkcktXd3I0MHBJS3F6SHlSU05n&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/QfKgbdbazPOXp089g8eNa-8axCzHOL3wXsD-gG6oUjsUvl8Ix2X9FxH8qnN6v-6_ZGbJdWGZNvNRXU6vvBkPpgJjxYVAUbpFcyUTbzReOfSEQuM9RLakvRsuPGAh4RhCR-AWVw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMJLGdH4QEVtlgTIzs0Mo8RBCi5iLHzMcke9EAS3JNcJtLnrS0ssg4cmZ3TOajftw?key=U1dMcF9nVkZKTWdyMWxTUndQWDZ6MklMYTB3Z3Rn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/EotjDAdwXx2r2krkwxdFJK3GgDNdIv30026CZUjJ_qz4noZVtjYNf7EnblmfgPh5bMnCL9D6A-b933drw-7_1TeH5Q8vVk7ROSbbYyeLdUl5VGvVDem5MieqJr5G10iEj4eyXw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNHgCsmuAZ2B2xN6bMycmAGCrnT5GPrQj3MxO8FFKR0UMvaFi0p-XL4gi5kf7moeA?key=QzA2X0NvNHZMN0Z0TEZ3ZE55MGJOS3BldkY5Z0pR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/hCgLEE-ezsXJhFOcLAhxupcmsfq5TzfLBLrZrgfQLxLLfbYm6fjhXDeRCvspb0mS98oVjyGC37Kuv1brH0QSKDG0rTusCd4hhbDIphXMm-b1q52TtHdGdXRxK-KKTjjIiJ2DVQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMAVp4Wo6fW0-Ht7pBS1an8Vixp6XKvOVVI9KcpuioljyHli7MjGrwainduX0PlHQ?key=all6R3J5eHB5WXlyM3hmaHE5aHI2MUpyUnJ4dm1R&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/UboroxtiUVmOmFwAOUloB86BxhQvrtpzSvnUZ4YaFMaXgpWN4faD_dzJdX95oJTRCvhHllCEdco6KjXyDoGGOCsGOxHSCNTt5V1QhPx5ZkpQzvE8-sDrHxpzmhOVBRzz9308Bw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMSGJTU7QXK0KBN8_L-Q0UknvmXDnkr3EY20v5J60L3BPmy9vsFcK153V2eJyxqlw?key=WUQ1VjVmaWFERjdxdUdoTnlXRWZMaGVwZDBBcjJB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/jqNCKrRYMT7YDeGnOILyFtnCUJsBoJ2OyMaZi4b0zjk0FC4jD0-_1nMA8CvGzpGoOXWHgZvOXdjG_x6aDTkKovpiha53MTEKJXYaUejvqCMyksc2UcSKH1l3RnKQ71_JLkCKmw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMaXuOdhJ_NVX2OMKw6zFFHisZuow6WzVNoaFeKg_23EUfBv6Dn5gsCqPGhHS1h8Q?key=LWNYSWdBYlhJZktNYUFnN2psUGdRbjBDWjNHcnZR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/MDkxiBIQ-btZjbFYrsazf9Oem8Xqvx0joax5PaqX-bNlOTCHQ-yykf3tMKeMr-zFj-FP_sOs8DM9nO0LFHaT3b1C-N5JYOxleopH7zuWtED5iiOnkT-_Wc__ooV6oealjGOt_A' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOeDsXxaqZNfI19M4jK6MDWNdFg4QLcibx6SCmB8z6yTQ5RDavXhvCh3qyBv61C9g?key=RHZWTlh5aC1lelB6MkQ5NTJIa1AwVkZQYThMeTRn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/-83lB_T8SqnJZzz2RA5BRnhpiuAH0PMELqGimMzcpS71eJOP7CrKxypEVnvkD6PFpvPhHv-EoMDiU2KwgiwzSQWMJBXGI4KxXB8zYlKV3xkpqTttBbBeoU706BtiRlS9RyDy_w' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOa8g74Wca1Zexm3asfp42e5E5r4Ya4iriKNa0RHokONK6xIrzOc5eo3OX2SEJUaw?key=OGxiRDZlN0VNVnFWLU9MdktvOUdEbFAtdXp1SzNB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/o2i3l72E554EVQi7gJL4p4hYR9Y2gGvqbiANWtGtbA9SHkaf873ZT-ewiSo-tyaskkewokSWeXJu7EeTBcw5YLvwie7ZcDvZKQMarVO69rSJ0aVlxkiZT_I0y9oSuKFg7Sf17w' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMxvJaheTeSY1PaTEgqFDBust3klg4y6rMlnxIJlAO-r6pabCdSvHZsdOAvBeYoRw?key=TjFxeUs0RWNhR004dEpKb0Fseko5RlpfVW1hQW9n&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/OZPo7D5aOZMZ2rmJU0_xu2e0qIjoaHkkNFBZI7aPjbCUfbR2oy0XHGVMH0fWBYiJpfY5CvxH6XXxcm0bD4Uau9coyxkUD802mCnFn2Wza5Ch-jGFbJZBOORMEhyEZxjNuQ7iTA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipPjNIdqyfg9tHfyK3XLM9-AGDc9bBuTBhiKToRY00FW_xgRADxqgN_k60Zbl374Xw?key=Sk9CWXlUelc3SzRFWjdiRVFTbGpxS00wb05TbXBB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/xQaTobxfU7Y8NLjKQLW6fkgfKXEe4jsv1OatzbZHfoxLUsy7M3g1Gw3AyRcu0ZHZ-cXtvPg3R414BuJfbZCis9dlNJtlAXNhFeICRBMv6GNGpd-KfZg-YXGp1hK3hY1joj4Qcw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNwDyh5oW4sHCtVzLpd9QVM8JUYrhH1TxK9AGYqmSaXy16-AQpIFRFf3uo_6aQAag?key=cHJ4enZUc000cmNaQVR2aUtIY2RKVWxjdU5LMHNn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/4gTEEBqgH_BLjbT716_dPSKKv-alzX0d6d7Cc68FbhMlhhtQ5IsbuliZMCWcrzHhqyTURaJRAw2c5CElb6hkxxFUWVgQjdqE-VVtsk0DXQjmdqIvSolS_bX1mItS9OWPDFIgsw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOZkuexjII6INrE23kb7iORGGK6reeLAv2x9jT2EMc8yWO5VgHbAesyGKlHmlUKxw?key=WUhuZ1RvWkhwRDlad0xKaHpPY2pNSmxTVU5nR1hn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/XlHWYFY7kWxb8f7WTRL4bLu-CPF5mQeiSH_j8B4NC-OtkoxJOj7kF1hWi_DiZ-CIc7_jaiR9_VV_ZX3Yl6s1k4Eu_jnCpfeJuhkj5mh6bAyZgr6v2LXGAzyOjzHrn5abx0E8yQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNbCwPnxYIz4zmK4F3IGpWraZdBZkQqfVsFfCm3aKQmdQxtl62Vp018Zixe1mpCdg?key=SW9ZeHcyYlp5Y1VSMlZ5WmtoTFQ0OGgyZEpObHVn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/LJ3H8F8KrkJJTbvQHigGalGqcWVqMUf05cCntBgd8YuSDPJFeFtOzGtq4snKxkqT-6zio1LwMhahCJtiJHTlKPQfGQIktnUpud19z_o6eOUWdlVlTR-B9NHdZ-4x60eSbIU9Wg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOVUF01toydVgmwcENDP3N2X36IaYZWdyJO5y5fuwcnzayVX45EMwNcgNOAgPyorw?key=WldNdWNldXVsNG5BQnhGT2M5d2FaTXVGa051MGpB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/lOZeW-G0hzHDZq1OU2VtG6Mi0UP4H0ZxUeoaV3vOg6dQjfHVEVSKrF_38kknJD1LaEk2TePdxrwvub1JrNZx9QUkGVKLusvlbJDJN5enuBSaptLPPOFkIwYFbZ2nB_wW2i8hfw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOssE5eNRQajfW6eGLMdcwGlxtPfrP7jp3iqf6rkjlWqmNmg_QYO0KBLueS4yl8IA?key=WVVJeTc0Wnk4OGc5UW1oTkxQdHpuUU5Nakd3SWF3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/Ni1H-xjurNFPVIH-lH91jns30zY_4miKstB4Wu9eRuclbj6qsKD-VN0UvjXV25zaZU6Couf0NCLl4zywvR52Ot7od5eSyH9h0P6WDyUpr0s798TKjy4-7Q8EP6B-1HuAYbtfkg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOpoT8syQVVKNhHtlu7z59S6FeprYcf0ETVTuOnV1zvoC1G7eXQNSRVnjuMhXMXmQ?key=QmVDcjdSY19EU0JGM0Rxc0dCQkJjSUVKOVhISHhR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/0ZQTTMLurmeFf8CbTXArCqkajKRVyPuW6oX3H1YVnRoQNwzte816yhfyRizUoqzB21Bo8SjYITAIVyqsu6enlH6sw-KgL4BDCWLEa7-tqA3fhonid7pdITA2EhWUl6WPukCwPg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipP1ZOLGDRVhGaf9FlUN97oaQYiiwdcQEccBimD4vrdhhNmf6TDMIlkQQhNHm9-iBQ?key=Z2djMHA5d3FnelJVN1ZfNmxDT3pKSVdkcGZyTWdn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/UIup8O8l7omcI29CSWpKtsQilGP95hIGtRzS3ZDoVsTD1yVZbO1vBqTwbiKPbagwhP4NKTi1rgQT2eU9ETsVGETkNbawGyT9NHSHhw6jwRtpHyL_0-oOvJNmTbSVbiB8FK5KXQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipPs5K-Tk3QPhKy4jSyfs69oIcWcGfQvqQd2TbeFrDsno6KVGteixme4mNfJqVLMjw?key=ZTNya0JLVGtXdE4wTFBGRS1hOGNnY1JJSGlEdUhn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/xuG6ziWJMvYFi5RtfdCYZWLzW66CKFTRnia5n9ONeZWSr4s4VHMYPLFc4aiSbmgv5w0hJlQQlh3Xndd-AJ5EU9_kMqQiOIuKdiq9GuDUJXp1PB4dUy47M4SLpy951S8ixK_rOw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOAbRsMAcak-yoAOlhhBGjH2dB85ATxWDT8fqV-lNoprxejpbBJOerXxCEGYCU-wA?key=TWZTUWY2aEtZVVNpbENYTXY5NkZ0MURSbDRHQ0Vn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/HA83sZvcgD6a8oXR1kRk7sMwKfYDhBUN4ILp5D6PvwvrvJSjBrXx05QZyFp8c6nVll59SLnmv9iWCiRB6pD4mytEQkIz5AfhLpRdXj3NxR4xavwJQLbWGIgsEAE2Iyp-tye4bQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipM0ZwvMextXjtDUQQ8IObSSLpb4ukLwJYjEqvFD6suBDE9qawrNN7OwcKwyQAVRAQ?key=QlJaenh2cFIwYjlSdGFpWXc5R0Q2SVlxZ0pFSDN3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/qRe3MYJ3yCJXu91XIHTJkunGemNxDEQusA8NwnylsIxcakJLVgNU13CoXNg1tnvoJZd952gNLWeYA_NoAjWmeZBpjtMHOtIPpwAcO5nb4NhlNydDUce-CN4EgBwmL6xwZI9xYA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipPst5Kr3Cx2Ov5L-MCmsPFTocgM79Km5nL7QNWVfDWe15KZR_muu-huVHgiy-ZzrA?key=OEJZZU1xbEZHMUxKNDRueFBiOEk4Zi02N3RYN25B&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/qM7KQi1becA1lE6jD36hLaWcdiCVr1xIBaqXbeGOVWos0lqLvqYvZXDoAExK9wp54vu-O_ENx42Y0D8Al3j_cmGd9gpaiG1VBEhiQboGyRfcfOEuZYdtpEM4zw9UxI-BY1jRlg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipO7MdW2P5oy7s2mY0prWBFJoXUfhTLRRRPtr7VOEzDF-z1r-gefTnxOHODB1j5Taw?key=WGhHLUNlT2E3SjRuV3dpenpCSVZ0Qjh1OE5jMzZ3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/mwWJlghU1zDoRZ-rtZVevbHtZYIQ9N2R2moOXkDHbub98JjTmOo-s9WRdyaOjQTVUpEy5_3y2aUpBB3Qli9LVeSGox4YeZBeaY6hQM7ECBNTzfdEeh-Ka0cu1MOq79VAUunkvw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipPiNDGNIYzcCFwIUmdM_kFxw_2j_2p0P6Cy8hvmPqcptHHVXJd_jkrXlfns6D0h0g?key=QUFSR2lSck9OdE1jYjQ1bWNSYUdsS3haOFVoVXRR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/TZEGjoBSCFkApLIrL97HOZ3709fduGj80fnx0Ex-TVJ1aAA0bSE1dZGoSQLSmf4bh1WazPJT6OVXN3R_Cknurav9HQSpDI_rod0H6FIojXHDBXLJb7ic8gPh2kGY5WkZa2Q5bw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipM0sU-_0uEFN26lzhTNaSuFOBFEPZXowL4cz3VQNSxb3t1ibiShT2je9dTh3QsIBg?key=TGx1RmFJOUltdFZyNTd1VDkyRFREa2NtaXJWU0xR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/Xn4AGeLG9f8B_C80VaBx1AY9RwRknH1YWoBnkaYQ03owARfFKbcXSL_VXh9FhS-GxjdTerUGqD_wA_P2J67V_gUIYm_W2g4dae7_IxgAATrz5dTUiC8GTgWiktvIvgk4OynLfA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNRhmVRdNNb-bmzeURYMoO_48wRYsysewFO6jUJhyyr-_S1Bjaaq1fs6MoodW5OTQ?key=UFpWenY5U3JLbXkwb3JiMWZKcXZPdlVGcDJkZS13&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/Bu0Lbb1peykVV13ivTTkguxv-hrMBynHPIFemr_7jyiyWvHnYnaHC34TSy4_CgzW45eQrGBTpk0PJda00FcQMRe_18F5NayxVc35KlEjUtxKienVXaYId3IwzlA2ZQydPMEI5g' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOBR9lHC4I1H80nVxZFH_FM_zQwh8xCE5Wls4Jho8WgG1pHqwRMDBw2EnS5rk-iUg?key=MzY0ckJ6U1lCdUJEbktMdk40SWVPWFNrV2NpT0JR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/_Qff4cAcNGT6EFXlyP4D7NHf75i6QWlLjwatwUc0KYLG5mN_DBCwRLrhcC_BMOMyhVU5ZojKM7pg5ToGRlzpNI23VclN6sQKXGG6gwHOfAVZaxXrVX1tXuEXsrv-aeE3vede3A' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOXs9UDrIv5HdEf13S2xPQOjEjwrBHATiffjwOZidX3bXrfj_PKDs3BF8kLfxBKGQ?key=aHVBWmExSmg1Vkg4NjdjVGxITG1feDFJZmxUWG5B&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/QzOgrpFo1adJ-7Dfa6FhwHwctMeF_MDjyHGQ39n5xJggt-QHJ2GQxYmKFOiPDgj8ZiL_Vlq4l7xElVOpgi9J_wQhrn41iireZNoEB6ZThWn7PUlkglR6VXUJzvW0_aoS2LPgNg' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipPmq3jAqTWaxPNMGcZ_oKHqbrSr4srFXAzOlJWK8kpsy0ikSjix9ke5-A-dUBslBA?key=UGpJNUEyUnFEX0dLbkVLQ1VkWTVJUE53RG4ySlRn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/tiHQE0nlHY2ls3z17L1ZOFmWfA-9wSeqmswGhY89gTI7PrJNfWrH5h0puELFAx7wc0MWGn1dMVILDGoc3PVBT33pBD8OPdnWkMGB_PVqFRmb13EibeNqu0fQVR849oLLNxRKvQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMlDQNBWkDzrTJPEaVDnnWOj1Aq0ssd_ZC959RO59TGj9ki1M8N9j05QkSXeA4K7Q?key=WDNmTmpkM3NyR1g2TjJ2a3BwaXZFeFlNUExzU0xR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/jPhmY51e5xSld5Ho-lZ_JqxSoSa94GcMGrF7u9u-Zvyl79hukeVSwa9xbZwTqey5mOg1DH5C-v3eGf9EvNjIREz-ztNw8eOF-kwEaV4aBh-dw9y6yN3fypyvkhh0G8-FrzCDWA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMAzCu6dwI7PL-0wg3X68iJWmpdAxIrxjiri0xhjodGfTzv5gnbw_mItPT9EN_u_g?key=RnRfRjJmSjM2bXFybG5LbUVPYlZzUUFnSTAyQm9B&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/NdbI306h02eYb0dXM2Gafx7Irojo6gMyzPVpnE3VXjFRpxErzjjw9Pohfnbdb4EU2Yw5lLOQ2ATsdz9tfDki6BmVBZ4NUgys_LjDW9YmbKnJVorudRdC2du4fiqA0VIxkwnAyA' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMbFdv-Pwrc2qdQx7-DUYBCBf2MVhggrtBfZ3zpjcyMYy2E95nk7yCdPxoqxxG9Gw?key=YUs4TVBWcnZMb2E4T0JhMWhEMmNUWnNPYmdKdFh3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/YcMvDd7-qZwUi19DX4mtUjGQhmi8dPLtn4Dpe_pcKDTAYLdLJVInqzs9jx_jO08cnm2xav7UUbBmFL-bqhWGLMnR4SS6x9GdPzQOHs0P9gVHj32gozEJ7yshqq6Bw9bMfSWKdQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMCNQ09z_fjAc0G1e28rrILiC0GRufSZnnMrXxvq9ls0zDDEZyS-VwlsE2odBo9-A?key=d2RxNDBueUptcG1kMW5feDhTOXdlZzlJWDZwN1hR&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/esLpoujx0f2sbuC3gBAla7HlvqTq80-KSiTrVGpMDe3dpL24Ff_o45jrsAYX_Z-HCsmwWMTgVlgqCxD0zE8dIpNdY_msKMvn_KAHdlgtsHbBunD33m9rY1P2GsiiqeVQRDwoUQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipO5r3rVUEQe9th6anOLrCLcLaypSiJ0_hixd7-wLn-ZxkIkDlbkAv7Efa3brA5vrw?key=N2JkUTI1VXBCbFlVYWppa3JqR21hb3EtY2ZhVmhB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/GzyGyFETIcPS22f3L_Zxa421BWj6W9G_SYsJtJOLw4zWTCD40KppHtGlkMBIxrFk5Vs8DGdPy-WvxYEcDTsRvlIREBKUM8T9brsLuXdeAYfNEDshKiqHuxR9iC0ysVqv1_O44g' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipP8NwYfTKfcLOhYZDmkZQs6-SYZMQ4P-6Hb1wxERCXyiPlR-yaykvNnb1oGLKvGLw?key=LUtWT0cxU3VvWndKRFpFTUVHREZRcTRWTG5RWFJn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/GvRfq2mzUIkZM4KZHGjvKWvp7Uu6C0ZVEVPyh2hZDL5ywVidofsgSY2yYmfaCVAtKyewdmcFku-F2sJkTia5W6NYs8StCfjNSZiVW_hvqIX50HUPyarbDDXALHdPHU4yznZBNQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOWS6xsoxTbejKtzFexm8e2jicHEYbMAFmanGia3nl1JB4JJwG4ONj8hjfuazORFw?key=anFIX1FZUldqZGJWWWNUaDE0TjlIeC1PdTMteHdB&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/UN97SP6fIC3wCNkdvaUZ8qxy7PvkpmSvv2FmTTjNBxmf1Um7mylr4LBw9eLskTkniWnaXxA7Qdwff0TDXBJeopvwEUPU6RyBmnbLa-mH0dBenhQy3We1hnFOR8IkGHPoVpXsTw' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipOQ9PEZ1kfQauXLrERFxvSUpDslEHr4AaS5u_xP4p-NzvUu1Irk9Z-os5NC6b2v7w?key=OTlLV0hsaElIQ1NaTE0wb0R3cXRWMHRib1k4R2Vn&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/pzXEC0uARGyT5mLsVpkp7CezbTJsXBwUdWET-JJkVeacMGcwAsC5pzL-YGtrW8rhosRvgKHa4Sn3qn7byG8sIAiA1uEoRuByrX3iepXfNYY3rVl4ALLJrGVqBtCnISc2Bfr7UQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipNCW-vooAafUcmcOR7eGesnLdw34j5Q0CoB9Krmjflsj6gZJzsxp-dSqoy90YuODw?key=eUJCNjl4VThCZWo0MENpR19JZHRad3RFOVpQaE13&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/aPqx5FGSmZXtnHoQ4JnDdWhCl9CMv4BY_y0dbZLmrYSaXGAutF6z9JVbSyXqGilzSL_4ukVxjeG7AuXU23wrHgBUpis3YCy79bob2w2uO9ZfgZSsf67XRhj-qIVCGj2Mg8nxSQ' /></a>&nbsp;<a href='#' onclick="window.open('https://photos.google.com/share/AF1QipMda-h1bAO6xs1ztM6rDI_iYxDP8zqYXqgsW_urDKpWuFFSfhnJ_cUivf6Ih6G6vg?key=U0plRmJVTVc0bmowNVNGTjZxZURibVVnbXBCMTF3&source=ctrlq..org', 400, 400)"><img height=135 width=180 src='https://lh3.googleusercontent.com/RmjFyxU0EQxxDyW7TWFCJULv8trhGC27XqBL-5HzXWG9BE6n8VDzKx2iSzIZiCckhr0_FzzGuXx8sP5Ty-B0Vsh_3vL8FjKEIqXOyoG6KmIHWXbnXzbepUCyI_Hv7ljjf6qEQg' /></a>&nbsp;</p>
+</div></div></div>
+    </div>
+    <div class="contant_rit">    	<div class="catagory">		    <ul id="jsddm">    		<li style="width:170px; padding:3px 5px 3px 5px; border-bottom:1px solid #f4f8d7;"><a href="photos.html">›› Photoes</a></li>    		<li style="width:170px; padding:3px 5px 3px 5px;"><a href="videos.html">›› Videos</a></li>    		</ul>    	</div>    </div>
+    <div class="bottom_align">
+        <div class="bottom">
+            <div class="bottom_menu">
+            <li><a href="index.html">Home</a> |</li>
+            <li><a href="about_us.html">About Us</a> |</li>
+            <li><a href="programme.html">Programme</a> |</li>
+            <li><a href="services.html">Services</a> |</li>
+            <li><a href="get-involved.html">Get Involved</a> |</li>
+            <li><a href="inspiring_progress.html">Inspiring Progress</a> |</li>
+            <li><a href="product.html">Product</a> |</li>
+            <li style="border-right:none;"> <a href="contact_us.html">Contact us</a></li>
+            </div>
+            <div class="bottom_text">
+                <li> © Copyright 2011 <span style="color:#39a14a;">Exnora Green</span><span style="color:#996335;"> Pammal.</span> A ll rights reserved.</li>
+                <li style="padding:0px 70px;">Powered by <a href="">Hirezz Solutions</a></li>
+            </div>
+        </div>
+    </div>  
+   
+  
+</div>
+
+    
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

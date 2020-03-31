@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Exnora Green Pammal</title>
+    <link href="css/style.css"  rel="stylesheet" />
+	<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="css/pascal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript">
+var timeout         = 0;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+	$('#color').css('background','#5a5858');
+	
+	}
+
+function jsddm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+	$('#color').css('background','none');
+}
+
+function jsddm_timer()
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);}
+	
+);
+
+document.onclick = jsddm_close;
+</script>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			
+			
+		});
+	</script>
+
+
+</head>
+
+<body>
+<div class="site">
+<div class="top">
+	<li><a href="index.html"><img src="images/logo.png" width="371" height="68" /></a></li>
+	<li style="float:right;"><a href="sitemap.html"><img src="images/site.png" width="103" height="44" /></a></li>
+</div>
+<div class="button_align">
+	<ul id="jsddm">
+    	<li><a href="index.html">Home</a></li>
+		<li><a href="about_us.html"> About us</a>
+        <ul>
+        	<li><a href="overview.html">Over view</a></li>
+            <li><a href="mission_goal.html">Mission and Goal</a></li>
+            <li><a href="management.html">Management</a></li>
+            <li><a href="partners.html">Our Partners</a></li>
+            
+        </ul>
+        </li>
+            <li><a href="programme.html">Programme</a>
+            <ul>
+            	<li><a href="swm-in-india.html">SWM in india</a></li>
+                <li><a href="trunkey_project .html">Turnkey Project</a></li>
+                <li><a href="consultancy.html">Consultancy</a></li>
+            </ul>
+            </li>
+        <li><a href="services.html">Services</a>
+        	<ul>
+            	<li><a href="where-we-work.html">Where we work</a></li>
+            	<li><a href="partnersip_goverment.html">Partnership with Goverment</a></li>
+                <li><a href="partnersip_corporate.html">Partnership with Corporate</a></li>
+                <li><a href="partnersip_Public.html">Partnership with Public</a></li>
+                <li><a href="partnersip_association.html">Partnership with Other Association</a></li>
+            </ul>
+        </li>
+       <li><a href="get-involved.html">Get involved</a>
+            <ul>
+            	<li><a href="careers.html">Careers</a></li>
+            	<li><a href="internship.html">Internship</a></li>
+                <li><a href="visit-egp.html">Visit EGP</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+            </ul>
+        </li>
+     	<li><a href="inspiring_progress.html">Inspiring Progress</a>
+        <ul>
+    		<li><a href="reports.html">Reports</a></li>
+            <li><a href="new_letter.html">New letter</a></li>
+            <li><a href="recognition.html">Recognition</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="galary.html">Gallery</a></li>
+        </ul>
+
+        <li><a href="product.html">product</a></li>
+        <li style="border-right:none;"><a href="contact_us.html">Contact us</a></li>
+    
+    </ul>
+</div>
+
+
+	
+		<div class="banner">
+        	<div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                <img src="images/banner.jpg" width="805" height="215" alt=""/>
+                <img src="images/where_we_work_10re.jpg" alt="" />
+                <img src="images/banner2.jpg" width="805" height="215" alt=""/>
+                <img src="images/banner3.jpg" width="805" height="215" alt=""/>
+                <img src="images/banner4.jpg" width="805" height="215" alt=""/>
+                </div>
+            </div>    
+		</div>        
+        
+        
+
+<div class="con_content">
+	<div class="icon"><img src="images/icon-all.png" /></div>
+	<div class="img2">photos</div>
+    <div class="contant_lft">
+    <div class="photos">
+    	<div class="photos-scl">
+        <div class="photos-head">Awareness campaign</div>
+        
+        <p>
+        	<a rel="example_group" href="images/1photo_Ex-visit1.jpg"> <img src="images/1photo_Ex-visit01.jpg" /></a>
+            
+            <a rel="example_group" href="images/1photo_Ex-visit2.jpg"> <img src="images/1photo_Ex-visit02.jpg" /></a>
+            
+            <a rel="example_group" href="images/1photo_Ex-visit3.jpg"> <img src="images/1photo_Ex-visit03.jpg" /></a>
+        </p>
+
+        <p>
+        	<a rel="example_group" href="images/1photo_Ex-visit4.jpg"> <img src="images/1photo_Ex-visit04.jpg" /></a>
+            
+            <a rel="example_group" href="images/1photo_Ex-visit5.jpg"> <img src="images/1photo_Ex-visit05.jpg" /></a>
+            
+            <a rel="example_group" href="images/1photo_Ex-visit6.jpg"> <img src="images/1photo_Ex-visit06.jpg" /></a>
+        </p>
+        
+        
+        <div class="photos-head">Exposal visit</div>
+        
+        <p>
+        	<a rel="example_group" href="images/IGP1.jpg"> <img src="images/IGP01.jpg" /></a>
+            
+            <a rel="example_group" href="images/IGP2.jpg"> <img src="images/IGP02.jpg" /></a>
+            
+            <a rel="example_group" href="images/IGP3.jpg"> <img src="images/IGP03.jpg" /></a>
+        </p>
+        
+        <div class="photos-head">IGP</div>
+
+        <p>
+        	<a rel="example_group" href="images/IGP4.jpg"> <img src="images/IGP04.jpg" /></a>
+            
+            <a rel="example_group" href="images/IGP5.jpg"> <img src="images/IGP05.jpg" /></a>
+            
+            <a rel="example_group" href="images/IGP6.jpg"> <img src="images/IGP06.jpg" /></a>
+        </p>
+        
+        <div class="photos-head">School Students visit</div>
+        
+        <p>
+        	<a rel="example_group" href="images/School-visit1.jpg"> <img src="images/School-visit01.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit2.jpg"> <img src="images/School-visit02.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit3.jpg"> <img src="images/School-visit03.jpg" /></a>
+        </p>
+
+        <p>
+        	<a rel="example_group" href="images/School-visit4.jpg"> <img src="images/School-visit04.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit5.jpg"> <img src="images/School-visit05.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit6.jpg"> <img src="images/School-visit06.jpg" /></a>
+        </p>
+
+
+        <p>
+        	<a rel="example_group" href="images/School-visit7.jpg"> <img src="images/School-visit07.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit8.jpg"> <img src="images/School-visit08.jpg" /></a>
+            
+            <a rel="example_group" href="images/School-visit9.jpg"> <img src="images/School-visit09.jpg" /></a>
+        </p>
+        
+        </div>
+	
+    </div>
+	</div>
+    
+    <div class="contant_rit">
+    	<div class="catagory">
+		    <ul id="jsddm">
+    		<li style="width:170px; padding:3px 5px 3px 5px; border-bottom:1px solid #f4f8d7;"><a href="photos.html">›› Photoes</a></li>
+    		<li style="width:170px; padding:3px 5px 3px 5px;"><a href="videos.html">›› Videos</a></li>
+    		</ul>
+    	</div>
+
+    </div>
+</div>    
+
+    <div class="bottom_align">
+        <div class="bottom">
+            <div class="bottom_menu">
+            <li><a href="index.html">Home</a> |</li>
+            <li><a href="about_us.html">About Us</a> |</li>
+            <li><a href="programme.html">Programme</a> |</li>
+            <li><a href="services.html">Services</a> |</li>
+            <li><a href="get-involved.html">Get Involved</a> |</li>
+            <li><a href="inspiring_progress.html">Inspiring Progress</a> |</li>
+            <li><a href="product.html">Product</a> |</li>
+            <li style="border-right:none;"> <a href="contact_us.html">Contact us</a></li>
+            <li style="padding-left:15px; padding-top:0px;"><a href="https://twitter.com/#!/Greenpammal1" target="_new"><img src="images/icon1.png" /></a></li>
+            <li style="padding-top:0px;"><a href="http://www.orkut.co.in/Main#Profile?uid=4235492001837707509" target="_new"><img src="images/icon2.png" /></a></li>
+            <li style="padding-top:0px;"><a href="http://www.facebook.com/?sk=ff" target="_blank"><img src="images/icon3.png" /></a></li>
+            <li style="padding-top:0px;"><a href="http://www.blogger.com/rearrange?blogID=2328339891891073033" target="_blank"><img src="images/icon4.png" /></a></li>
+            </div>
+            <div class="bottom_text">
+                <li> © Copyright 2011 <span style="color:#39a14a;">Exnora Green</span><span style="color:#996335;"> Pammal.</span> A ll rights reserved.</li>
+                <li style="padding:0px 70px;">Powered by <a href="">Hirezz Solutions</a></li>
+            </div>
+        </div>
+    </div>  
+   
+  
+</div>
+
+    
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

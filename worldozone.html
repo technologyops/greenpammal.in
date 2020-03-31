@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Exnora Green Pammal</title>
+
+<link href="css/style.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" /> 
+
+    <link rel="stylesheet" href="css/pascal.css" type="text/css" media="screen" />
+
+
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+var timeout         = 0;
+
+var closetimer		= 0;
+
+var ddmenuitem      = 0;
+
+
+
+function jsddm_open()
+
+{	jsddm_canceltimer();
+
+	jsddm_close();
+
+	ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+
+	$('#color').css('background','#5a5858');
+
+	
+
+	}
+
+
+
+function jsddm_close()
+
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+
+	$('#color').css('background','none');
+
+}
+
+
+
+function jsddm_timer()
+
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+
+
+function jsddm_canceltimer()
+
+{	if(closetimer)
+
+	{	window.clearTimeout(closetimer);
+
+		closetimer = null;}}
+
+
+
+$(document).ready(function()
+
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);}
+
+	
+
+);
+
+
+
+document.onclick = jsddm_close;
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<div class="site">
+
+<div class="top">
+
+	<li><a href="index.html"><img src="images/logo.png" width="371" height="68" /></a></li>
+
+	<li style="float:right;"><a href="sitemap.html"><img src="images/site.png" width="103" height="44" /></a></li>
+
+</div>
+
+
+
+	
+
+<div class="button_align">
+
+	<ul id="jsddm">
+
+    	<li><a href="index.html">Home</a></li>
+
+		<li><a href="about_us.html"> About us</a>
+
+        <ul>
+
+        	<li><a href="overview.html">Over view</a></li>
+
+            <li><a href="mission_goal.html">Mission and Goal</a></li>
+
+            <li><a href="management.html">Management</a></li>
+
+            <li><a href="partners.html">Our Partners</a></li>
+
+
+
+            <li><a href="partners.html">Our Partners</a></li>
+
+            
+
+        </ul>
+
+        </li>
+
+            <li><a href="programme.html">Programme</a>
+
+            <ul>
+
+            	<li><a href="swm-in-india.html">SWM in india</a></li>
+
+                <li><a href="trunkey_project .html">Turnkey Project</a></li>
+
+                <li><a href="consultancy.html">Consultancy</a></li>
+
+            </ul>
+
+            </li>
+
+        <li><a href="services.html">Services</a>
+
+        	<ul>
+
+            	<li><a href="where-we-work.html">Where we work</a></li>
+
+            	<li><a href="partnersip_goverment.html">Partnership with Goverment</a></li>
+
+                <li><a href="partnersip_corporate.html">Partnership with Corporate</a></li>
+
+                <li><a href="partnersip_Public.html">Partnership with Public</a></li>
+
+                <li><a href="partnersip_association.html">Partnership with Other Association</a></li>
+
+            </ul>
+
+        </li>
+
+       <li><a href="get-involved.html">Get involved</a>
+
+            <ul>
+
+            	<li><a href="careers.html">Careers</a></li>
+
+            	<li><a href="internship.html">Internship</a></li>
+
+                <li><a href="visit-egp.html">Visit EGP</a></li>
+
+                <li><a href="volunteer.html">Volunteer</a></li>
+
+            </ul>
+
+        </li>
+
+     	<li><a href="inspiring_progress.html">Inspiring Progress</a>
+
+        <ul>
+
+    		<li><a href="reports.html">Reports</a></li>
+
+            <li><a href="new_letter.html">New letter</a></li>
+
+            <li><a href="recognition.html">Recognition</a></li>
+
+            <li><a href="impact.html">Impact</a></li>
+
+            <li><a href="galary.html">Gallery</a></li>
+
+        </ul>
+
+
+
+        <li><a href="product.html">product</a></li>
+
+        <li style="border-right:none;"><a href="contact_us.html">Contact us</a></li>
+
+    
+
+    </ul>
+
+</div>
+
+
+
+
+
+		<div class="banner">
+
+        	<div class="slider-wrapper theme-default">
+
+                <table border="1" width="806" style="border-style: dashed; border-width: 3px">
+					<tr>
+						<td width="125"><a href="world_zone/photo1_large.jpg">
+						<img border="0" src="world_zone/photo1_small.jpg" width="125" height="99"></a></td>
+						<td width="117"><a href="world_zone/photo2_large.jpg">
+						<img border="0" src="world_zone/photo2_small.jpg" width="117" height="100"></a></td>
+						<td width="121"><a href="world_zone/photo3_large.jpg">
+						<img border="0" src="world_zone/photo3_small.jpg" width="121" height="104"></a></td>
+						<td width="132"><a href="world_zone/photo4_large.jpg">
+						<img border="0" src="world_zone/photo4_small.jpg" width="132" height="105"></a></td>
+						<td width="84"><a href="world_zone/photo5_large.jpg">
+						<img border="0" src="world_zone/photo5_small.jpg" width="89" height="105"></a></td>
+						<td width="80"><a href="world_zone/photo6_large.jpg">
+						<img border="0" src="world_zone/photo6_small.jpg" width="90" height="109"></a></td>
+						<td width="82"><a href="world_zone/photo7_large.jpg">
+						<img border="0" src="world_zone/photo7_small.jpg" width="85" height="105"></a></td>
+					</tr>
+				</table>
+				<p align="center"><font color="#39A14A"><b>
+				<span style="font-size: 12pt; line-height: 115%; font-family: Calibri,sans-serif">
+				</span><span style="font-size:12pt;line-height:115%">Pammal Observes World Ozone Day</span></b></font></p>
+
+            </div>
+			<p align="justify">
+			<span style="font-size: 10.0pt; line-height: 115%; font-family: Verdana,sans-serif; color: #333333">Since 1995, on 16 September each year, the International Day for the 
+	Preservation of the Ozone Layer is celebrated. This year commemorates the 25<sup>th</sup> 
+	year of observance.&nbsp; This date has been designated by the United Nations 
+	General Assembly in its resolution 49/114, to commemorate the signing of the 
+	Montreal Protocol on Substances that Deplete the Ozone Layer. This 
+	commemoration around the world offers an opportunity to focus attention and 
+	action at the global, regional and national levels on the protection of the 
+	ozone layer.</span></p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In connection to this, 
+	the Pammal Magalir Federation by the invitation of the director of the 
+	Department of Environment Dr.H. Malleshappa, I.F.S organized an event and an 
+	awareness rally at Pammal, Chennai. </span></p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The director of the 
+	Department of Environment for state Dr. H. Malleshappa, IFS., the State 
+	coordinator, National Green corps, Department of Environment, Mr. L. Durai, 
+	Er. Kirubakaran from the Tamilnadu State Pollution Control Board, the 
+	Chairman, Pammal Municipality Mr. C.V.Elangovan, attended the event and 
+	graced the occasion. </span></p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Earlier in the day, 
+	the dignitaries visited the model biogas plant and were briefed about its 
+	functions after which the programme was started by planting trees near the 
+	model Bio gas plant, where the entire programme was conducted. </span></p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The Pammal Magalir 
+	Federation’s head Ms. Mangalam Balasubramanian welcomed the dignitaries for 
+	the programme and gave an overview of the World Ozone day.&nbsp; In his inaugural 
+	speech, the Chairman of Pammal Municipality Mr. C.V. Elangovan remembered 
+	the many programmes conducted by the Pammal Magalir Federation on Solid 
+	Waste management and other environment preserving activities done by the 
+	federation in the locality.&nbsp; He congratulated their effort in bringing 
+	awareness to the locals by their programmes.&nbsp; </span></p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In his speech, Er. 
+	Kirubakaran from the Tamilnadu State Pollution Control Board gave an 
+	overview on what an ozone layer is and how it gets affected by the 
+	negligence of humans and the waste created by them.&nbsp; He appealed to the 
+	participants of the rally to take the awareness of not using plastic bags 
+	and to go back to the good old days where there was little usage of 
+	plastics. In his speech, the state coordinator for the National Green Corps 
+	Mr. L. Durai, insisted on the importance of growing greeneries in the 
+	locality and appealed to create awareness on trees plantation.&nbsp; </span>
+			</p>
+			<p class="MsoNormal" align="justify">
+			<span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In his Special 
+	address, the Director of the Department of the state for Environment, Dr. H. 
+	Malleshappa, I.F.S, congratulated the many good activities of the Pammal 
+	Magalir Federation on Environmental issues.&nbsp; He wished to continue their 
+	good work and appealed to the members to continue to give patronage to this 
+	good cause.&nbsp;&nbsp; Accepting the wishes, Ms. Mangalam Balasubramanian said that 
+	their motto is to think globally, act locally and do domestically and 
+	reminded the Department of the state for Environment on the proposal sent by 
+	them for planting trees on the Sengazhaneer Hill and mentioned the 
+	successful completion of the de-silting of the temple tank, which has 
+	increased the water table in the area to 15 feet from 80 feet.&nbsp; </span>
+			</p>
+			<p align="justify">
+			<span style="font-size: 10.0pt; line-height: 115%; font-family: Verdana,sans-serif; color: #333333">After the programme, the awareness rally was flagged off by the Director, 
+	Dr. H. Malleshappa. Around 50 women from the self help groups in Pammal 
+	joined together in the awareness rally chanting slogans to plant more trees, 
+	to not to use plastic products, to reduce the use of vehicles and to use 
+	cycles often, to do rainwater harvesting and not to cut trees. The women 
+	members gave away handbills containing awareness message to the locals and 
+	demonstrated by collecting waste product and materials on the road.</span></p>
+			<div class="bottom">
+				<div class="bottom_menu">
+					<li><a href="index.html"><font color="#FFFFFF">Home</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="about_us.html"><font color="#FFFFFF">About Us</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="programme.html"><font color="#FFFFFF">Programme</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="services.html"><font color="#FFFFFF">Services</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="get-involved.html"><font color="#FFFFFF">Get Involved</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="inspiring_progress.html"><font color="#FFFFFF">Inspiring Progress</font></a><font color="#FFFFFF"> |</font></li>
+					<li><a href="product.html"><font color="#FFFFFF">Product</font></a><font color="#FFFFFF"> |</font></li>
+					<li style="border-right:none;"><a href="contact_us.html">
+					<font color="#FFFFFF">Contact us</font></a></li>
+					<li style="padding-left:15px; padding-top:0px;">
+					<a href="https://twitter.com/#!/Greenpammal1" target="_new">
+					<img src="images/icon1.png" /></a></li>
+					<li style="padding-top:0px;">
+					<a href="http://www.orkut.co.in/Main#Profile?uid=4235492001837707509" target="_new">
+					<img src="images/icon2.png" /></a></li>
+					<li style="padding-top:0px;">
+					<a href="http://www.facebook.com/?sk=ff" target="_blank">
+					<img src="images/icon3.png" /></a></li>
+					<li style="padding-top:0px;">
+					<a href="http://www.blogger.com/rearrange?blogID=2328339891891073033" target="_blank">
+					<img src="images/icon4.png" /></a></li></div></div>    
+
+		</div>  
+
+  
+
+</div> 
+
+</body>
+
+</html>
+
